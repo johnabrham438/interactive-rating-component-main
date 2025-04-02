@@ -1,0 +1,116 @@
+:root{
+--Orange-500: hsl(25, 97%, 53%);
+--White: hsl(0, 100%, 100%);
+--Grey-500: hsl(217, 12%, 63%);
+--Grey: hsla(210, 15%, 24%, 0.63);
+--Grey-900: hsl(213, 19%, 18%);
+--Grey-950: hsl(216, 12%, 8%);
+}
+body{
+    background-color: var(--Grey-950);
+    font-family: "Karla", sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.rating-state,.thank-you-state{
+    display: flex;
+    flex-direction: column;
+    background: var(--Grey-900);
+}
+.rating-state{
+    
+    width: min(20rem, 78%);
+    padding: 2rem clamp(1rem, 5vw, 2rem);
+    align-items: left;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    text-align: left;
+    
+}
+.rating-state img{
+ width: 1rem;
+ background-color: var(--Grey);
+ padding: 0.5rem;
+ border-radius: 50%;
+}
+h1{
+    color: var(--White);
+}
+.rating-state p{
+    width: 100%;
+    padding-bottom: 1rem;
+    hyphens: auto;
+    margin: 0 auto;
+    color: var(--Grey-500);
+}
+.rating-state .rating-buttons{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 1rem;
+   
+}
+.rating-btn{
+    padding: 1rem;
+    border-radius: 50%;
+    color: var(--White);
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: var(--Grey);
+}
+.rating-btn:hover, .rating-btn:focus{
+  background-color: var(--Orange-500);
+  
+}
+
+.submit-button{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+#submit-btn{
+    background-color: var(--Orange-500);
+    padding: 0.5rem;
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+#submit-btn:active{
+    transform: scale(0.98);
+
+}
+.thank-you-state{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: min(20rem, 90%);
+    padding: 2rem clamp(1rem, 5vw, 2rem);
+    border-radius: 1.5rem;
+    
+    
+}
+.thank-you-state img{
+    margin-bottom: 2rem;
+}
+.rating{
+    background-color: var(--Grey);
+    padding: .5rem;
+    color: var(--Orange-500);
+    border-radius: 1.5rem;
+    width: 12rem;
+    margin-bottom: .5rem;
+}
+.thank-you-state p{
+    width: 100%;
+    hyphens: auto;
+    color: var(--Grey-500);
+}
